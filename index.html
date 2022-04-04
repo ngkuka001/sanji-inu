@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primaryColor: "#bdbd22",
+            },
+          },
+        },
+      };
+    </script>
+    <style type="text/tailwindcss">
+      @layer components {
+        .title-section {
+          @apply text-6xl;
+        }
+      }
+    </style>
+  </head>
+  <body class="min-h-screen bg-black text-white">
+    <div class="hidden preloader">
+      <div class="loader">
+        <div class="ytp-spinner">
+          <div class="ytp-spinner-container">
+            <div class="ytp-spinner-rotator">
+              <div class="ytp-spinner-left">
+                <div class="ytp-spinner-circle"></div>
+              </div>
+              <div class="ytp-spinner-right">
+                <div class="ytp-spinner-circle"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <header class="header-area">
+      <div class="navbar-area">
+        <div class="container relative mx-auto px-4">
+          <div class="w-full">
+            <nav
+              class="flex items-center navbar navbar-expand-lg justify-between lg:justify-start"
+            >
+              <a class="mr-4 navbar-brand max-w-[200px]" href="index.html">
+                <img src="assets/images/logo.png" alt="Logo" />
+              </a>
+              <button
+                class="block navbar-toggler focus:outline-none lg:hidden"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarOne"
+                aria-controls="navbarOne"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-10 w-10 text-white"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </button>
+
+              <div
+                class="absolute left-0 z-20 hidden w-full px-5 py-3 duration-300 bg-white shadow lg:w-auto collapse navbar-collapse lg:block top-100 mt-full lg:static lg:bg-transparent lg:shadow-none"
+                id="navbarOne"
+              >
+                <ul
+                  id="nav"
+                  class="items-center content-start mr-auto lg:justify-end navbar-nav lg:flex text-primaryColor space-x-4"
+                >
+                  <li class="nav-item active">
+                    <a class="page-scroll" href="#home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="page-scroll" href="#features">Features</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="page-scroll" href="#about">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="page-scroll" href="#facts">Why</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="page-scroll" href="#team">Team</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="page-scroll" href="#blog">Blog</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div
+                class="absolute right-0 hidden mt-2 mr-24 navbar-btn sm:inline-block lg:mt-0 lg:static lg:mr-0"
+              >
+                <a
+                  class="main-btn gradient-btn"
+                  data-scroll-nav="0"
+                  href="#"
+                  rel="nofollow"
+                  >Download Now</a
+                >
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container mx-auto px-4 flex items-center">
+      <div class="flex flex-1 flex-col text-center">
+        <img
+          class="object-contain"
+          src="assets/images/onepiece.png"
+          alt="onepiece"
+        />
+        <div class="text-8xl">SANJI INU</div>
+      </div>
+      <div class="flex flex-1">
+        <img
+          class="object-contain"
+          src="assets/images/sanji-inu.png"
+          alt="sanji inu"
+        />
+      </div>
+    </div>
+
+    <div class="container mx-auto px-4">
+      <div class="text-center w-full title-section">Who are Sanji?</div>
+      <div class="flex">
+        <div class="flex flex-col basis-1/3">
+          <div>Vinsmoke Sanji</div>
+          <div>Text testing testing</div>
+        </div>
+        <div class="basis-2/3">
+          <iframe
+            class="w-full aspect-video"
+            src="https://www.youtube.com/embed/VFo0vmA8A1U"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!--====== Main js ======-->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
