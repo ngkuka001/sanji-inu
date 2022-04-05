@@ -11,7 +11,7 @@
         theme: {
           extend: {
             colors: {
-              primaryColor: "#bdbd22",
+              primaryColor: '#bdbd22',
             },
           },
         },
@@ -20,7 +20,13 @@
     <style type="text/tailwindcss">
       @layer components {
         .title-section {
-          @apply text-6xl;
+          @apply text-7xl font-bold;
+        }
+        .tokenomic-card {
+          @apply flex-1 rounded-lg h-[500px] bg-white relative pt-48 p-3 text-4xl;
+        }
+        .tokenomic-card > img {
+          @apply absolute -top-44;
         }
       }
     </style>
@@ -145,13 +151,60 @@
       <div class="flex">
         <div class="flex flex-col basis-1/3">
           <div>Vinsmoke Sanji</div>
-          <div>Text testing testing</div>
+          <div>
+            "Black Leg" Sanji, born as Vinsmoke Sanji, is the cook of the Straw
+            Hat Pirates. He is the fifth member of the crew and the fourth to
+            join, doing so at the end of the Baratie Arc.
+          </div>
         </div>
         <div class="basis-2/3">
           <iframe
             class="w-full aspect-video"
             src="https://www.youtube.com/embed/VFo0vmA8A1U"
           ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-48">
+        <div class="w-full title-section">TOKENOMICS</div>
+        <div class="text-4xl">
+          $SANJI is built in a sustainable way to benefit both holders and
+          project sustainability.
+        </div>
+        <div class="text-8xl font-bold">
+          <span class="text-[#d82407]">12%</span> TAX
+        </div>
+        <div class="text-8xl font-bold">
+          <span class="text-[#eb8a08]">6%</span> BUY |
+          <span class="text-[#d75d0a]">6%</span> SELL
+        </div>
+      </div>
+      <div class="flex gap-x-2">
+        <div class="tokenomic-card bg-[#EB8A08]">
+          <img src="assets/images/sanji-inu.png" alt="" />
+          <div>
+            The remaining 1% will be burned forever that no one can access and
+            use them, this will help Sanji scarcity in the future and increase
+            the value of the project
+          </div>
+        </div>
+        <div class="tokenomic-card bg-[#D75D0A]">
+          <img src="assets/images/sanji-inu.png" alt="" />
+          <div>
+            Liquidity will be locked, the developer team will only hold 3% to
+            use for project marketing and the community will be the one to
+            decide the project
+          </div>
+        </div>
+        <div class="tokenomic-card bg-[#D82407]">
+          <img src="assets/images/sanji-inu.png" alt="" />
+          <div>
+            2% of the fee will be funded to the people of the countries affected
+            by the war as well as help promote the project to many users in the
+            future.
+          </div>
         </div>
       </div>
     </div>
