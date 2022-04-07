@@ -7,8 +7,8 @@ window.onload = (event) => {
       const eleOffset = ele.offsetTop;
       console.log({ eleOffset });
       if (
-        currentScroll > eleOffset - screen.height / 2 &&
-        currentScroll < eleOffset + screen.height / 2 - 1
+        currentScroll > eleOffset - screen.height &&
+        currentScroll < eleOffset + screen.height / 2 - 100
       ) {
         ele.classList.add("animate__fadeInUp");
         ele.classList.remove("animate__fadeOutDown");
