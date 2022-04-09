@@ -1,5 +1,13 @@
+setTimeout(() => {
+  const preloader = document.getElementById('preload-section');
+  preloader.classList.add('hidden');
+  preloader.classList.remove('flex');
+  document.getElementsByTagName('body')[0].classList.remove('overflow-hidden');
+}, 1500);
 window.onload = () => {
-  const refs = [...document.querySelectorAll(`[class*="animate__"]`)];
+  const refs = [
+    ...document.querySelectorAll(`[class*="animate__"]:not(.preloader)`),
+  ];
   const handleFade = (windowOffset) => {
     refs.forEach((ele) => {
       const eleOffset = ele.offsetTop;
