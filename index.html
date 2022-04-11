@@ -13,8 +13,8 @@
     />
     <style>
       @font-face {
-        font-family: 'GothamBlack';
-        src: url('/assets/fonts/Gotham-Black.otf');
+        font-family: "GothamBlack";
+        src: url("/assets/fonts/Gotham-Black.otf");
       }
     </style>
     <style type="text/tailwindcss">
@@ -53,18 +53,63 @@
         }
       }
     </style>
+    <style>
+      .collapsible {
+        background-color: #777;
+        color: white;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+      }
+
+      .active,
+      .collapsible:hover {
+        background-color: #555;
+        color: #f6db2a;
+      }
+      .active + .content {
+        padding: 24px 18px;
+      }
+
+      .collapsible:after {
+        content: "\002B";
+        color: white;
+        font-weight: bold;
+        float: right;
+        margin-left: 5px;
+      }
+
+      .active:after {
+        content: "\2212";
+      }
+
+      .content {
+        padding: 0 18px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        background-color: #1b1b1b;
+      }
+      .content a {
+        color: #145aa8;
+      }
+    </style>
     <script>
       tailwind.config = {
         theme: {
           extend: {
             colors: {
-              primaryColor: '#bdbd22',
+              primaryColor: "#bdbd22",
             },
             backgroundImage: {
-              'footer-banner': "url('/assets/images/footer-banner.jpg')",
+              "footer-banner": "url('/assets/images/footer-banner.jpg')",
             },
             fontFamily: {
-              gothamBlack: ['GothamBlack', 'sans-serif'],
+              gothamBlack: ["GothamBlack", "sans-serif"],
             },
           },
         },
@@ -244,7 +289,7 @@
       <section id="tokenomics">
         <div class="text-center mb-80 animate__animated animate__fadeOut">
           <div class="w-full title-section mb-6">TOKENOMICS</div>
-          <div class="text-2xl w-full md:w-1/2 mx-auto mb-6">
+          <div class="text-2xl w-full md:w-1/2 mx-auto mb-20">
             $SANJI is built in a sustainable way to benefit both holders and
             project sustainability.
           </div>
@@ -254,6 +299,8 @@
           <div class="flex items-center gap-4 mb-5">
             <div class="flex-1 flex flex-col justify-center items-center gap-4">
               <img src="assets/images/Unicrypt.png" alt="" />
+            </div>
+            <div class="flex-1 flex flex-col gap-4 items-center">
               <a
                 href=""
                 class="border-2 border-[#F6DB2A] p-2 rounded-md text-center px-8 btn-hover w-52"
@@ -262,32 +309,38 @@
               <a
                 href=""
                 class="border-2 border-[#F6DB2A] p-2 rounded-md text-center px-8 btn-hover w-52"
-                >Buy Metashark</a
+                >Buy Sanji Inu</a
               >
             </div>
-            <div class="flex-1 flex flex-col gap-4 items-center">
-              <div class="text-lg">Audited by Coinscope</div>
+          </div>
+          <div class="flex mb-20">
+            <div class="flex-1">
+              <div class="text-lg mb-4">Audited by Coinscope</div>
 
               <a
-                href=""
+                href="https://github.com/coinscope-co/audits/blob/main/sanji/audit.pdf"
                 class="border-2 border-[#F6DB2A] p-2 rounded-md text-center px-8 btn-hover w-52"
                 >View Audit</a
               >
-              <div class="text-lg">Team is KYC verified by Coinscope</div>
+            </div>
+            <div class="flex-1">
+              <div class="text-lg mb-4">Team is KYC verified by Coinscope</div>
               <a
-                href=""
+                href="https://github.com/coinscope-co/audits/blob/main/sanji/audit.pdf"
                 class="border-2 border-[#F6DB2A] p-2 rounded-md text-center px-8 btn-hover w-52"
                 >View KYC</a
               >
-              <div class="text-lg">Contract created by the Sanji Inu</div>
+            </div>
+            <div class="flex-1">
+              <div class="text-lg mb-4">Contract created by the Sanji Inu</div>
               <a
-                href=""
+                href="https://bscscan.com/address/0xa9f059f63cd432b65a723eeeff69304fd780070c#code"
                 class="border-2 border-[#F6DB2A] p-2 rounded-md text-center px-8 btn-hover w-52"
                 >View Contract</a
               >
             </div>
           </div>
-          <div class="text-4xl md:text-8xl font-bold">
+          <div class="text-4xl md:text-6xl font-bold">
             <span class="text-[#eb8a08]">6%</span> BUY |
             <span class="text-[#d75d0a]">6%</span> SELL
           </div>
@@ -611,7 +664,110 @@
       </section>
 
       <!-- how to buy -->
-      <section></section>
+      <section>
+        <div class="w-full title-section text-center mb-6">HOW TO BUY?</div>
+        <div class="flex gap-5">
+          <div class="flex-1">
+            <button class="collapsible">
+              Step 1: Download Metamask or Trust Wallet
+            </button>
+            <div class="content">
+              <p>
+                You can download the Metamask app&nbsp;<a
+                  href="https://metamask.io/download.html"
+                  >here&nbsp;</a
+                >or Trust Wallet app&nbsp;<a
+                  href="https://trustwallet.com/download-page"
+                  >here</a
+                >. You can also use Metamask on desktop but you need to use
+                Google Chrome and download this&nbsp;<a
+                  href="https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn"
+                  >extension</a
+                >.
+              </p>
+            </div>
+            <button class="collapsible">
+              Step 2: Connect wallet to Binance Smart Chain
+            </button>
+            <div class="content">
+              <p>
+                Cryptocurrencies and tokens are often on different networks
+                known as blockchains.&nbsp;<br />&zwj;<br />Since the Sanji Inu
+                token is on Binance Smart Chain you will need to connect your
+                wallet to the Smart Chain if it isn’t already.&nbsp;<br />&zwj;<br />It
+                is pretty quick and easy, anyone can do it following some simple
+                instructions.<br />&zwj;<br /><a
+                  href="https://docs.binance.org/smart-chain/wallet/trustwallet.html"
+                  >Connect Trust Wallet to Smart Chain</a
+                ><br /><a
+                  href="https://academy.binance.com/en/articles/connecting-metamask-to-binance-smart-chain"
+                  >Connect Metamask to Smart Chain</a
+                >
+              </p>
+            </div>
+            <button class="collapsible">Step 3: Get BNB</button>
+            <div class="content">
+              <p>
+                Before you can actually buy any token on the Smart Chain you
+                must first send some BNB to your wallet. You can send BNB from
+                another wallet including exchange wallets like Binance. It is
+                recommended that you have a Binance account if you don’t already
+                as it can come in handy for things like this.&nbsp;<br /><a
+                  href="https://www.binance.com/en"
+                  >Binance website&nbsp;</a
+                >–&nbsp;<a href="https://www.binance.com/en/download"
+                  >Binance App<br />&zwj;</a
+                ><br />BNB is needed because every transaction on Smart Chain
+                uses BNB to pay a very small gas fee. You will see the gas fee
+                details when you confirm the transaction in your wallet.<br /><br />You
+                do not need to pay gas fees when buying a token from a
+                centralized exchange like Binance, you only do on a
+                Decentralized exchange (DEX) like Pancake Swap. Remember you can
+                actually swap any Bep20 token for another. So you can swap Sanji
+                Inu into any other Bep20 token on Pancake Swap at any time.<br /><br />Just
+                remember you always need a little BNB for gas fees.
+              </p>
+            </div>
+            <button class="collapsible">Step 4: Buy Sanji Inu</button>
+            <div class="content">
+              <p>
+                Now you have BNB in your wallet you can buy Sanji Inu.&nbsp;<br />&zwj;<br />Before
+                you try to buy you must click the settings button and change the
+                slippage to 11%. This is because Sanji Inu comes with 9% sales
+                tax as mentioned in the tokenomics section. The transaction may
+                not work without this.<br />&zwj;<br />Here is a little more
+                info on how to use Pancake Swap.<br /><a
+                  href="https://docs.pancakeswap.finance/products/pancakeswap-exchange/trade-guide"
+                  >Pancake Swap guide<br />&zwj;<br /></a
+                >One you have bought Sanji Inu you will need to manually add the
+                token to your wallet so that you can see it in there.<br />&zwj;<br /><a
+                  href="https://community.trustwallet.com/t/how-to-add-a-custom-token/213"
+                  >Add token to Trust Wallet guide</a
+                ><br /><a
+                  href="https://metamask.zendesk.com/hc/en-us/articles/360015489031-How-to-view-see-your-tokens-custom-tokens-in-MetaMask"
+                  >Add token to Metamask guide<br />&zwj;<br /></a
+                >Great, now you have Sanji Inu in your wallet and you can hodl
+                it as we ascend on our space mission! Check out the Moon
+                Map&nbsp;and if you need help or have any more questions that
+                are not answered on this site then chat with us in our&nbsp;<a
+                  href="https://t.me/sanjiinucommunity"
+                  >Telegram group</a
+                >.
+              </p>
+            </div>
+          </div>
+          <iframe
+            class="flex-1"
+            width="550"
+            height="310"
+            src="https://www.youtube.com/embed/KpF41eS3YZQ"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
     </div>
     <div
       class="h-96 bg-footer-banner bg-bottom bg-no-repeat bg-cover p-8 flex items-center"
@@ -741,5 +897,28 @@
 
     <!--====== Main js ======-->
     <script src="assets/js/sanji.js"></script>
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+      const contents = document.querySelectorAll(".content");
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+          // if (!this.classList.contains("active")) {
+          //   const activeItem = document.querySelector(".collapsible.active");
+          //   activeItem && activeItem.classList.remove("active");
+          // }
+
+          this.classList.toggle("active");
+          // contents.forEach((content) => (content.style.maxHeight = null));
+          var content = this.nextElementSibling;
+          if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+          }
+        });
+      }
+    </script>
   </body>
 </html>
