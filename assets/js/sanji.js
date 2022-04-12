@@ -4,6 +4,7 @@ setTimeout(() => {
   preloader.classList.remove('flex');
   document.getElementsByTagName('body')[0].classList.remove('overflow-hidden');
 }, 1500);
+
 window.onload = () => {
   const refs = [
     ...document.querySelectorAll(`[class*="animate__"]:not(.preloader)`),
@@ -45,4 +46,6 @@ window.onload = () => {
   handlePositionToken();
 
   window.addEventListener('resize', handlePositionToken);
+
+  // toglle menu
 };
