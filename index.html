@@ -11,6 +11,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.1/dist/css/splide.min.css"
+      integrity="sha256-6YrKt7vMU9e4bwtlblASqhvvEt4/0JEQJ/zyWOFKnaM="
+      crossorigin="anonymous"
+    />
     <style>
       @font-face {
         font-family: 'GothamBlack';
@@ -292,6 +298,20 @@
               allow="autoplay"
             ></iframe>
           </div>
+        </div>
+      </section>
+
+      <section
+        id="welcome"
+        class="splide"
+        aria-label="Splide Basic HTML Example"
+      >
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">Slide 01</li>
+            <li class="splide__slide">Slide 02</li>
+            <li class="splide__slide">Slide 03</li>
+          </ul>
         </div>
       </section>
 
@@ -906,6 +926,12 @@
 
     <!--====== Main js ======-->
     <script src="assets/js/sanji.js"></script>
+    <script src="assets/js/auto-scroll.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.1/dist/js/splide.min.js"
+      integrity="sha256-bPFHGtlzinBbML+yf5JBexDq8KynAuUMXc3ksBY9Eyo="
+      crossorigin="anonymous"
+    ></script>
     <script>
       var coll = document.getElementsByClassName('collapsible');
       var i;
