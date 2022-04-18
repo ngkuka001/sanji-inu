@@ -13,9 +13,7 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.1/dist/css/splide.min.css"
-      integrity="sha256-6YrKt7vMU9e4bwtlblASqhvvEt4/0JEQJ/zyWOFKnaM="
-      crossorigin="anonymous"
+      href="https://cdn.jsdelivr.net/npm/keen-slider@6.6.8/keen-slider.min.css"
     />
     <style>
       @font-face {
@@ -102,6 +100,24 @@
       }
       .content a {
         color: #145aa8;
+      }
+
+      /* Test */
+      [class^='number-slide'],
+      [class*=' number-slide'] {
+        background: grey;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 50px;
+        color: #fff;
+        font-weight: 500;
+        /* height: 300px; */
+        /* max-height: 100vh; */
+      }
+      .keen-slider__slide {
+        min-width: 272px;
+        height: auto;
       }
     </style>
     <script>
@@ -229,8 +245,11 @@
       </div>
     </header>
 
-    <div class="container mx-auto px-4 max-w-screen-xl">
-      <section class="flex items-center flex-col md:flex-row" id="home">
+    <div>
+      <section
+        class="container mx-auto px-4 max-w-screen-xl flex items-center flex-col md:flex-row"
+        id="home"
+      >
         <div
           class="flex flex-1 flex-col text-center animate__animated animate__fadeInUp"
         >
@@ -256,7 +275,7 @@
         </div>
       </section>
 
-      <section id="about">
+      <section id="about" class="container mx-auto px-4 max-w-screen-xl">
         <div class="text-center w-full title-section mb-6">Who are Sanji?</div>
         <div class="flex flex-col md:flex-row gap-10">
           <div class="flex flex-col basis-1/3">
@@ -301,21 +320,98 @@
         </div>
       </section>
 
-      <section
-        id="welcome"
-        class="splide"
-        aria-label="Splide Basic HTML Example"
-      >
-        <div class="splide__track">
-          <ul class="splide__list">
-            <li class="splide__slide">Slide 01</li>
-            <li class="splide__slide">Slide 02</li>
-            <li class="splide__slide">Slide 03</li>
-          </ul>
+      <section id="squad">
+        <div class="container mx-auto px-4 max-w-screen-xl">
+          <div class="flex gap-4 mb-10">
+            <div class="flex-1">
+              <div class="title-section mb-4">
+                WELCOME <br />
+                TO THE SANJI-INU
+              </div>
+              <div class="flex">
+                <div class="w-[550px] font-bold text-2xl">SANJI</div>
+                <div class="flex-auto">
+                  Sanji-Inu (SANJI) is a collection of 666 Sanji NFT fans that
+                  includes variations on outfits and accessories.
+                </div>
+              </div>
+            </div>
+            <div class="w-80">
+              <img class="w-full" src="/assets/images/squad/(1).png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div id="my-keen-slider" class="keen-slider">
+          <div class="keen-slider__slide">
+            <img src="/assets/images/squad/(1).png" alt="" />
+          </div>
+          <div class="keen-slider__slide">
+            <img src="/assets/images/squad/(2).png" alt="" />
+          </div>
+          <div class="keen-slider__slide">
+            <img src="/assets/images/squad/(3).png" alt="" />
+          </div>
+          <div class="keen-slider__slide">
+            <img src="/assets/images/squad/(4).png" alt="" />
+          </div>
+          <div class="keen-slider__slide">
+            <img src="/assets/images/squad/(5).png" alt="" />
+          </div>
+          <div class="keen-slider__slide">
+            <img src="/assets/images/squad/(6).png" alt="" />
+          </div>
+          <div class="keen-slider__slide">
+            <img src="/assets/images/squad/(7).png" alt="" />
+          </div>
+          <div class="keen-slider__slide">
+            <img src="/assets/images/squad/(8).png" alt="" />
+          </div>
+          <div class="keen-slider__slide">
+            <img src="/assets/images/squad/(9).png" alt="" />
+          </div>
+          <div class="keen-slider__slide">
+            <img src="/assets/images/squad/(10).png" alt="" />
+          </div>
+        </div>
+        <br />
+        <div id="my-keen-slider2" class="keen-slider">
+          <div class="keen-slider__slide">
+            <img src="/assets/images/squad/(11).png" alt="" />
+          </div>
+          <div class="keen-slider__slide">
+            <img src="/assets/images/squad/(12).png" alt="" />
+          </div>
+          <div class="keen-slider__slide">
+            <img src="/assets/images/squad/(13).png" alt="" />
+          </div>
+          <div class="keen-slider__slide">
+            <img src="/assets/images/squad/(14).png" alt="" />
+          </div>
+          <div class="keen-slider__slide">
+            <img src="/assets/images/squad/(15).png" alt="" />
+          </div>
+          <div class="keen-slider__slide">
+            <img src="/assets/images/squad/(16).png" alt="" />
+          </div>
+          <div class="keen-slider__slide">
+            <img src="/assets/images/squad/(17).png" alt="" />
+          </div>
+          <div class="keen-slider__slide">
+            <img src="/assets/images/squad/(18).png" alt="" />
+          </div>
+          <div class="keen-slider__slide">
+            <img src="/assets/images/squad/(19).png" alt="" />
+          </div>
+          <div class="keen-slider__slide">
+            <img src="/assets/images/squad/(20).png" alt="" />
+          </div>
+          <div class="keen-slider__slide">
+            <img src="/assets/images/squad/(21).png" alt="" />
+          </div>
         </div>
       </section>
 
-      <section id="tokenomics">
+      <section id="tokenomics" class="container mx-auto px-4 max-w-screen-xl">
         <div class="text-center mb-80 animate__animated animate__fadeOut">
           <div class="w-full title-section mb-6">TOKENOMICS</div>
           <div class="text-2xl w-full md:w-1/2 mx-auto mb-20">
@@ -406,7 +502,7 @@
         </div>
       </section>
 
-      <section>
+      <section class="container mx-auto px-4 max-w-screen-xl">
         <div class="w-full title-section text-center mb-4">TRANSPARENCY</div>
         <div class="flex items-center mb-4">
           <div class="basis-2/5 flex justify-center">
@@ -486,7 +582,7 @@
         </div>
       </section> -->
 
-      <section id="roadmap">
+      <section id="roadmap" class="container mx-auto px-4 max-w-screen-xl">
         <div class="w-full title-section text-center mb-4">ROADMAP</div>
         <div class="flex gap-2 md:items-center flex-col md:flex-row">
           <div class="flex-1">
@@ -573,7 +669,7 @@
         </div>
       </section>
 
-      <section id="team" class="pb-10">
+      <section id="team" class="pb-10 container mx-auto px-4 max-w-screen-xl">
         <div class="w-full title-section text-center mb-6">OUR TEAM</div>
         <div class="flex justify-between items-start">
           <div class="our-team-card">
@@ -634,7 +730,10 @@
         </div>
       </section>
 
-      <section id="partner" class="pb-10">
+      <section
+        id="partner"
+        class="pb-10 container mx-auto px-4 max-w-screen-xl"
+      >
         <div class="w-full title-section text-center mb-6">PARTNER</div>
         <div class="flex justify-between items-start">
           <div class="our-team-card">
@@ -693,7 +792,7 @@
       </section>
 
       <!-- how to buy -->
-      <section>
+      <section class="container mx-auto px-4 max-w-screen-xl">
         <div class="w-full title-section text-center mb-6">HOW TO BUY?</div>
         <div class="flex gap-5 flex-col md:flex-row">
           <div class="flex-1">
@@ -918,42 +1017,52 @@
           </div>
         </div>
       </div>
-      <!-- <div class="flex justify-between mt-12 text-[#e0dbc2bf]">
-        <div>© 2021. In collaboration with Artivak.</div>
-        <div>Terms & Conditions</div>
-      </div> -->
     </footer>
 
     <!--====== Main js ======-->
     <script src="assets/js/sanji.js"></script>
-    <script src="assets/js/auto-scroll.min.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.1/dist/js/splide.min.js"
-      integrity="sha256-bPFHGtlzinBbML+yf5JBexDq8KynAuUMXc3ksBY9Eyo="
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/keen-slider@6.6.8/keen-slider.min.js"></script>
     <script>
-      var coll = document.getElementsByClassName('collapsible');
-      var i;
-      const contents = document.querySelectorAll('.content');
+      var animation = { duration: 25000, easing: (t) => t };
 
-      for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener('click', function () {
-          // if (!this.classList.contains("active")) {
-          //   const activeItem = document.querySelector(".collapsible.active");
-          //   activeItem && activeItem.classList.remove("active");
-          // }
+      var slider = new KeenSlider('#my-keen-slider', {
+        loop: true,
+        renderMode: 'performance',
+        drag: false,
+        slides: {
+          perView: 'auto',
+          spacing: 15,
+        },
+        created(s) {
+          s.moveToIdx(5, true, animation);
+        },
+        updated(s) {
+          s.moveToIdx(s.track.details.abs + 5, true, animation);
+        },
+        animationEnded(s) {
+          s.moveToIdx(s.track.details.abs + 5, true, animation);
+        },
+      });
 
-          this.classList.toggle('active');
-          // contents.forEach((content) => (content.style.maxHeight = null));
-          var content = this.nextElementSibling;
-          if (content.style.maxHeight) {
-            content.style.maxHeight = null;
-          } else {
-            content.style.maxHeight = content.scrollHeight + 'px';
-          }
-        });
-      }
+      var slider = new KeenSlider('#my-keen-slider2', {
+        loop: true,
+        renderMode: 'performance',
+        drag: false,
+        rtl: true,
+        slides: {
+          perView: 'auto',
+          spacing: 15,
+        },
+        created(s) {
+          s.moveToIdx(5, true, animation);
+        },
+        updated(s) {
+          s.moveToIdx(s.track.details.abs + 5, true, animation);
+        },
+        animationEnded(s) {
+          s.moveToIdx(s.track.details.abs + 5, true, animation);
+        },
+      });
     </script>
     <script>
       function toggleMenu() {
