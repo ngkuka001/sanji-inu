@@ -17,8 +17,8 @@
     />
     <style>
       @font-face {
-        font-family: "GothamBlack";
-        src: url("/assets/fonts/Gotham-Black.otf");
+        font-family: 'GothamBlack';
+        src: url('/assets/fonts/Gotham-Black.otf');
       }
     </style>
     <style type="text/tailwindcss">
@@ -80,7 +80,7 @@
       }
 
       .collapsible:after {
-        content: "\002B";
+        content: '\002B';
         color: white;
         font-weight: bold;
         float: right;
@@ -88,7 +88,7 @@
       }
 
       .active:after {
-        content: "\2212";
+        content: '\2212';
       }
 
       .content {
@@ -103,8 +103,8 @@
       }
 
       /* Test */
-      [class^="number-slide"],
-      [class*=" number-slide"] {
+      [class^='number-slide'],
+      [class*=' number-slide'] {
         background: grey;
         display: flex;
         align-items: center;
@@ -125,13 +125,13 @@
         theme: {
           extend: {
             colors: {
-              primaryColor: "#bdbd22",
+              primaryColor: '#bdbd22',
             },
             backgroundImage: {
-              "footer-banner": "url('/assets/images/footer-banner.jpg')",
+              'footer-banner': "url('/assets/images/footer-banner.jpg')",
             },
             fontFamily: {
-              gothamBlack: ["GothamBlack", "sans-serif"],
+              gothamBlack: ['GothamBlack', 'sans-serif'],
             },
           },
         },
@@ -234,6 +234,11 @@
                 class="absolute right-0 hidden mt-2 mr-24 navbar-btn sm:inline-block lg:mt-0 lg:static lg:mr-0"
               >
                 <a
+                  href="https://dex.sanjiinu.club/"
+                  class="border-2 mr-2 border-[#F6DB2A] p-2 rounded-md text-center px-2 btn-hover"
+                  >LAUNCH DEX</a
+                >
+                <a
                   href="https://pancakeswap.finance/swap?outputCurrency=0xA9F059F63cd432B65A723EEeFf69304FD780070c"
                   class="border-2 border-[#F6DB2A] p-2 rounded-md text-center px-2 btn-hover"
                   >BUY SANJI</a
@@ -301,9 +306,10 @@
                 >Join Telegram</a
               >
               <a
-                href="https://sweepwidget.com/view/54539-bhx432fv"
+                href="/assets/Whitepaper-Sanji.pdf"
+                target="_blank"
                 class="border-2 border-[#F6DB2A] p-2 rounded-md text-center w-full btn-hover"
-                >Join Whitelist
+                >Whitepaper
               </a>
             </div>
           </div>
@@ -314,12 +320,19 @@
               height="480"
               src="https://www.youtube.com/embed/VFo0vmA8A1U"
             ></iframe> -->
-            <iframe
-              src="https://drive.google.com/file/d/1buXOOAx16ZXsoKwkHtLolwDdtLhrUwe9/preview"
-              width="100%"
-              height="480"
-              allow="autoplay"
-            ></iframe>
+            <video
+              width="1280"
+              height="720"
+              controls
+              preload="metadata"
+              poster="https://petentat.sirv.com/Sanji/CROWN%20_%20Vinsmoke%20Sanji%20%5BAMV%5D.mp4?thumbnail=1280"
+            >
+              <source
+                src="https://petentat.sirv.com/Sanji/CROWN%20_%20Vinsmoke%20Sanji%20%5BAMV%5D.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
           </div>
         </div>
       </section>
@@ -1031,12 +1044,12 @@
     <script>
       var animation = { duration: 25000, easing: (t) => t };
 
-      var slider = new KeenSlider("#my-keen-slider", {
+      var slider = new KeenSlider('#my-keen-slider', {
         loop: true,
-        renderMode: "performance",
+        renderMode: 'performance',
         drag: false,
         slides: {
-          perView: "auto",
+          perView: 'auto',
           spacing: 15,
         },
         created(s) {
@@ -1050,13 +1063,13 @@
         },
       });
 
-      var slider = new KeenSlider("#my-keen-slider2", {
+      var slider = new KeenSlider('#my-keen-slider2', {
         loop: true,
-        renderMode: "performance",
+        renderMode: 'performance',
         drag: false,
         rtl: true,
         slides: {
-          perView: "auto",
+          perView: 'auto',
           spacing: 15,
         },
         created(s) {
@@ -1072,11 +1085,11 @@
     </script>
     <script>
       function toggleMenu() {
-        console.log("run");
-        const menu = document.getElementById("navbarOne");
-        menu.classList.toggle("hidden");
-        menu.classList.toggle("-right-[100vw]");
-        menu.classList.toggle("right-0");
+        console.log('run');
+        const menu = document.getElementById('navbarOne');
+        menu.classList.toggle('hidden');
+        menu.classList.toggle('-right-[100vw]');
+        menu.classList.toggle('right-0');
       }
     </script>
   </body>
